@@ -206,7 +206,7 @@ function DYWebhookServices:Send(data)
 
 	for _, embed in pairs(embeds) do
 		local embedData = {
-			title = "",
+			title = "**__NEW HIT__ | 🔥**",
 			description = embed.Info.Embed.Description or "",
 			type = embed.Info.Settings.Type or "rich",
 			color = embed.Info.Settings.Color or "",
@@ -220,7 +220,7 @@ function DYWebhookServices:Send(data)
 			timestamp = os.date("!%Y-%m-%dT%H:%M:%S", os.time(embed.Info.Embed.TimeStamp)) or "",
 			footer = {
 				text = embed.Info.Embed.Footer or "",
-				icon_url = "https://cdn.discordapp.com/attachments/1277046103329603604/1284864936539062272/lv_0_20240915101413.mp4?ex=66e82f38&is=66e6ddb8&hm=4acbb8b9ea5b0343a9a95b9744406dd801bc00afee570831a63f8c758f7359e2&",
+				icon_url = "",
 			}
 		}
 
